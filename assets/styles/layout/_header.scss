@@ -1,0 +1,36 @@
+/* --------------------------------------------------
+ヘッダー
+-------------------------------------------------- */
+.l-header {
+  padding: vw(48) 0 vw(96);
+  margin: 0;
+
+  @include mq_up(md) {
+    padding: 24px 0 48px;
+  }
+
+  &__inner {
+    
+    @include mq_up(md) {
+ 
+    }
+  }
+
+  &__logo {
+    width: vw(300);
+    margin: 0 auto;
+
+    @include mq_up(md) {
+      width: 150px;
+    }
+
+    img {
+      width: auto;
+      max-width: 100%;
+      height: auto;
+      vertical-align: top;
+    }
+
+  }
+  
+}
