@@ -1,0 +1,242 @@
+/* --------------------------------------------------
+モーダルウィンドウ
+-------------------------------------------------- */
+.c-modal {
+  padding: 0;
+  margin: 0;
+  
+  @include mq_up(md) {
+    
+  }
+
+  &__inner {
+    padding: vw(0) 0 vw(96);
+
+    @include mq_up(md) {
+      padding: 0px 0 48px;
+    }
+  }
+
+  &__head {
+    width: 100%;
+    height: vw(80);
+    background-color: rgba(34,49,52,0.9);
+    display: flex;
+    justify-content: space-between;
+
+    @include mq_up(md) {
+      height: 40px;
+    }
+
+  }
+
+  &__login {
+    height: vw(80);
+    padding: 0 vw(48);
+    color: white;
+    background-color: rgba(255,255,255,0.3);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s;
+
+    &:hover {
+      background-color: rgba(255,255,255,0.5);
+    }
+
+    @include mq_up(md) {
+      padding: 0 24px;
+      height: 40px;
+    }
+
+  }
+
+  &__hero {
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @include mq_up(md) {
+      
+    }
+
+  }
+
+  &__content {
+    text-align: center;
+
+    @include mq_up(md) {
+      
+    }
+    
+  }
+
+  &__btn {
+    padding: vw(16) vw(48);
+    color: white;
+    background-color: #239b76;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: vw(8);
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    @include mq_up(md) {
+      padding: 8px 24px;
+      border-radius: 4px;
+    }
+    
+  }
+
+  /* モーダル部分のCSS */
+  &__login-modal-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    display: none;
+    
+  }
+
+  &__signup-modal-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    display: none;
+    
+  }
+
+  &__innerbox {
+    position: absolute;
+    top: 30%;
+    left: calc(100% / 2 - 45.33335vw);
+    background-color: #e6ecf0;
+    padding: vw(40) 0 vw(80);
+    border-radius: vw(20);
+    width: vw(680);
+    height: auto;
+    text-align: center;
+  
+    @include mq_up(md) {
+      padding: 20px 0 40px;
+      border-radius: 10px;
+      top: 30%;
+      left: calc(100% / 2 - 225px);
+      width: 450px;
+    }
+  }
+
+  &__close-btn {
+    position: absolute;
+    width: vw(30);
+    height: vw(30);
+    top: vw(10);
+    right: vw(20);
+    cursor: pointer;
+  
+    @include mq_up(md) {
+      width: 30px;
+      height: 30px;
+      top: 10px;
+      right: 20px;
+      
+    }
+  
+    &:before {
+      content: "";
+      position: absolute;
+      width: 40%;
+      height: vw(48);
+      background: #999;
+      left: 0%;
+      top: 50%;
+      top: calc(50% - 1px);
+      transform-origin: 50% 50%;
+      transform: rotate(-45deg);
+  
+      @include mq_up(md) {
+        width: 80%;
+        height: 6px;
+        left: 15%;
+      }
+    }
+  
+    &:after {
+      content: "";
+      position: absolute;
+      width: 40%;
+      height: vw(48);
+      background: #999;
+      left: 0%;
+      top: 50%;
+      top: calc(50% - 1px);
+      transform-origin: 50% 50%;
+      transform: rotate(45deg);
+  
+      @include mq_up(md) {
+        width: 80%;
+        height: 6px;
+        left: 15%;
+      }
+    }
+  
+  }
+
+}
+
+/* フォームボックス */
+#signup-form, #login-form {
+  width: 100%;
+}
+
+#signup-form h2, #login-form h2 {
+  color: #5f5d60;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+
+  @include mq_up(md) {
+    
+  }
+}
+
+#signup-form input, #login-form input {
+  width: 320px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  padding: 12px 12px;
+  border: 1px solid #d0d5d8;
+  border-radius: 5px;
+
+  @include mq_up(md) {
+    
+  }
+}
+
+#submit-btn {
+  display: inline-block;
+  padding: vw(14) vw(140);
+  background-color: #5dca88;
+  border: none;
+  border-radius: vw(6);
+  color: white;
+  margin: vw(20) auto;
+  cursor: pointer;
+
+  @include mq_up(md) {
+    padding: 14px 140px;
+    margin: 10px auto;
+    border-radius: 3px;
+  }
+}
