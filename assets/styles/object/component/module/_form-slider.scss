@@ -1,0 +1,254 @@
+/* --------------------------------------------------
+スライダー（フォーム）
+-------------------------------------------------- */
+.c-form-slider {
+  padding: 0;
+  margin: 0;
+
+  &__inner {
+    padding: vw(32);
+
+    @include mq_up(md) {
+      padding: 16px;
+
+    }
+
+  }
+
+  &__title {
+    @include fs-h2;
+    text-align: center;
+  }
+
+  &__index-btn-wrapper {
+    display: flex;
+    justify-content: flex-end;
+
+    li {
+      margin-right: vw(16);
+
+      @include mq_up(md) {
+        margin-right: 8px;
+
+      }
+
+      &:last-of-type {
+        margin-right: 0;
+
+      }
+
+      &.current {
+        color: $Light-100;
+        background-color: $Tertiary;
+        animation: fadeIn 1s ease-out 0s 1 normal;
+    
+      }
+
+    }
+
+  }
+
+  &__slide-inner {
+    margin: vw(32) 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @include mq_up(md) {
+      margin: 32px 0;
+  
+    }
+
+    li {
+      margin-bottom: vw(16);
+      padding: vw(16);
+      width: 49%;
+      color: $Dark-100;
+      background-color: $Surface;
+      border: vw(2) solid $Dark-012;
+
+      @include mq_up(md) {
+        margin-bottom: 8px;
+        padding: 8px;
+        border: 1px solid $Dark-012;
+    
+      }
+
+      &:last-of-type {
+        margin-bottom: 0;
+
+      }
+
+    }
+
+  }
+
+  &__slide-caution {
+    padding: vw(8);
+    color: $Light-100;
+    background-color: $Secondary;
+
+    @include mq_up(md) {
+      padding: 8px;
+      font-size: 14px;
+  
+    }
+
+  }
+
+  &__slide-subtitle {
+    padding: 0;
+    margin: 0;
+
+  }
+
+  &__slide-attention {
+    padding: vw(8);
+    color: $Dark-100;
+    background-color: $Dark-016;
+
+    @include mq_up(md) {
+      padding: 8px;
+      font-size: 14px;
+  
+    }
+
+  }
+
+  &__fix {
+    padding: vw(100) 0;
+    @include fs-h1;
+    text-align: center;
+
+    @include mq_up(md) {
+      padding: 50px 0;
+  
+    }
+
+  }
+  
+}
+
+.index-btn {
+  color: $Dark-026;
+  background-color: $Surface;
+  padding: vw(4) vw(16);
+  @include fs-Caption-S;
+
+  @include mq_up(md) {
+    padding: 3px 6px;
+    font-size: 14px;
+
+  }
+  
+}
+
+.slides {
+  padding: 0;
+
+  li {
+
+    &.active {
+      display: block;
+      animation: fadeIn 1s ease-out 0s 1 normal;
+      
+    }
+
+  }
+
+}
+
+.slide {
+  display: none;
+
+}
+
+.change-btn-wrapper {
+  @include fs-Button-S;
+
+}
+
+.change-btn-wrapper:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.prev-btn {
+  cursor: pointer;
+  float: left;
+  display: none;
+
+  button {
+    @extend %__c-Btn;
+
+  }
+
+}
+
+.next-btn {
+  cursor: pointer;
+  float: right;
+  // display: none;
+
+  button {
+    @extend %__c-Btn;
+
+    &:disabled {
+      color: $Dark-026;
+
+      &:hover {
+        color: $Dark-026;
+        opacity: 1;
+      }
+
+    }
+
+  }
+
+}
+
+%__c-Btn {
+  cursor: pointer;
+  padding: 0;
+  margin: 0 0 vw(8);
+  width: vw(280);
+  height: vw(100);
+  @include fs-Button;
+  text-align: center;
+  color: $Dark-100;
+  text-decoration: none;
+  background-color: $Surface;
+  border-radius: vw(8);
+  box-shadow: 0 vw(8) 0 $Dark-026;
+  border: vw(2) solid $Light-012;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include mq_up(md) {
+    margin: 0 0 4px;
+    width: 280px;
+    height: 50px;
+    border-radius: 4px;
+    box-shadow: 0 4px 0 $Dark-026;
+    border: 1px solid $Light-012;
+  }
+  &:hover,
+  &:focus,
+  &:visited,
+  &:active {
+    color: $Dark-100;
+    text-decoration: none;
+  }
+  &:hover {
+    opacity: .5;
+  }
+}
+
+@keyframes fadeIn { /*animation-nameで設定した値を書く*/
+
+  0% {opacity: 0} /*アニメーション開始時は不透明度0%*/
+
+  100% {opacity: 1} /*アニメーション終了時は不透明度100%*/
+
+}
