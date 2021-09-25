@@ -112,33 +112,6 @@ fieldset {
 }
 
 /* --------------------------------------------------
-ブレイクポイント
--------------------------------------------------- */
-/* --------------------------------------------------
-PC/SP切り替え
--------------------------------------------------- */
-/**
-* PC/SP切り替え
-**/
-@media screen and (max-width: 768px) {
-  .mobile-visibility {
-    display: block;
-  }
-
-  .pc-visibility {
-    display: none;
-  }
-}
-@media screen and (min-width: 769px) {
-  .mobile-visibility {
-    display: none;
-  }
-
-  .pc-visibility {
-    display: block;
-  }
-}
-/* --------------------------------------------------
 関数
 -------------------------------------------------- */
 /* --------------------------------------------------
@@ -151,16 +124,9 @@ PC/SP切り替え
 セクション
 -------------------------------------------------- */
 .l-section {
-  padding: 6.4vw 0 10.6666666667vw;
+  padding: vw(48) 0 vw(80);
   margin: 0 auto;
   width: 100%;
-}
-@media screen and (min-width: 769px) {
-  .l-section {
-    padding: 24px 0 40px;
-    width: 750px;
-    border-radius: 12px;
-  }
 }
 
 /* --------------------------------------------------
@@ -170,34 +136,22 @@ PC/SP切り替え
   margin: 0 auto;
   width: 100%;
 }
-@media screen and (min-width: 769px) {
-  .l-main {
-    width: 750px;
-  }
-}
 
 /* --------------------------------------------------
 ヘッダー
 -------------------------------------------------- */
 .header {
   width: 92%;
-  margin: 5.3333333333vw auto 13.3333333333vw;
-}
-@media screen and (min-width: 769px) {
-  .header {
-    margin: 20px auto 50px;
-  }
+  margin: 20px auto 50px;
 }
 .header__logo {
-  width: 40vw;
+  width: 150px;
   margin: 0 auto;
 }
-@media screen and (min-width: 769px) {
-  .header__logo {
-    width: 150px;
-  }
+.header__logo a {
+  display: block;
 }
-.header__logo img {
+.header__logo a img {
   width: auto;
   max-width: 100%;
   height: auto;
@@ -208,17 +162,11 @@ PC/SP切り替え
 フッター
 -------------------------------------------------- */
 .l-footer__inner {
-  padding: 4.2666666667vw 0;
+  padding: vw(32) 0;
   text-align: center;
   font-size: 1rem;
   line-height: 1.5;
   font-weight: normal;
-}
-@media screen and (min-width: 769px) {
-  .l-footer__inner {
-    padding: 16px 0;
-    font-size: 10px;
-  }
 }
 
 /* --------------------------------------------------
@@ -230,28 +178,18 @@ PC/SP切り替え
   /* モーダル部分のCSS */
 }
 .c-modal__inner {
-  padding: 0vw 0 12.8vw;
-}
-@media screen and (min-width: 769px) {
-  .c-modal__inner {
-    padding: 0px 0 48px;
-  }
+  padding: vw(0) 0 vw(96);
 }
 .c-modal__head {
   width: 100%;
-  height: 10.6666666667vw;
+  height: vw(80);
   background-color: rgba(34, 49, 52, 0.9);
   display: flex;
   justify-content: space-between;
 }
-@media screen and (min-width: 769px) {
-  .c-modal__head {
-    height: 40px;
-  }
-}
 .c-modal__login {
-  height: 10.6666666667vw;
-  padding: 0 6.4vw;
+  height: vw(80);
+  padding: 0 vw(48);
   color: white;
   background-color: rgba(255, 255, 255, 0.3);
   display: flex;
@@ -262,12 +200,6 @@ PC/SP切り替え
 .c-modal__login:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
-@media screen and (min-width: 769px) {
-  .c-modal__login {
-    padding: 0 24px;
-    height: 40px;
-  }
-}
 .c-modal__hero img {
   max-width: 100%;
   height: auto;
@@ -276,22 +208,16 @@ PC/SP切り替え
   text-align: center;
 }
 .c-modal__btn {
-  padding: 2.1333333333vw 6.4vw;
+  padding: vw(16) vw(48);
   color: white;
   background-color: #239b76;
   display: inline-block;
   opacity: 0.8;
-  border-radius: 1.0666666667vw;
+  border-radius: vw(8);
   cursor: pointer;
 }
 .c-modal__btn:hover {
   opacity: 1;
-}
-@media screen and (min-width: 769px) {
-  .c-modal__btn {
-    padding: 8px 24px;
-    border-radius: 4px;
-  }
 }
 .c-modal__login-modal-wrapper {
   position: fixed;
@@ -318,42 +244,25 @@ PC/SP切り替え
   top: 30%;
   left: calc(50% - 45.33335vw);
   background-color: #e6ecf0;
-  padding: 5.3333333333vw 0 10.6666666667vw;
-  border-radius: 2.6666666667vw;
-  width: 90.6666666667vw;
+  padding: vw(40) 0 vw(80);
+  border-radius: vw(20);
+  width: vw(680);
   height: auto;
   text-align: center;
 }
-@media screen and (min-width: 769px) {
-  .c-modal__innerbox {
-    padding: 20px 0 40px;
-    border-radius: 10px;
-    top: 30%;
-    left: calc(50% - 225px);
-    width: 450px;
-  }
-}
 .c-modal__close-btn {
   position: absolute;
-  width: 4vw;
-  height: 4vw;
-  top: 1.3333333333vw;
-  right: 2.6666666667vw;
+  width: vw(30);
+  height: vw(30);
+  top: vw(10);
+  right: vw(20);
   cursor: pointer;
-}
-@media screen and (min-width: 769px) {
-  .c-modal__close-btn {
-    width: 30px;
-    height: 30px;
-    top: 10px;
-    right: 20px;
-  }
 }
 .c-modal__close-btn:before {
   content: "";
   position: absolute;
   width: 40%;
-  height: 6.4vw;
+  height: vw(48);
   background: #999;
   left: 0%;
   top: 50%;
@@ -361,31 +270,17 @@ PC/SP切り替え
   transform-origin: 50% 50%;
   transform: rotate(-45deg);
 }
-@media screen and (min-width: 769px) {
-  .c-modal__close-btn:before {
-    width: 80%;
-    height: 6px;
-    left: 15%;
-  }
-}
 .c-modal__close-btn:after {
   content: "";
   position: absolute;
   width: 40%;
-  height: 6.4vw;
+  height: vw(48);
   background: #999;
   left: 0%;
   top: 50%;
   top: calc(50% - 1px);
   transform-origin: 50% 50%;
   transform: rotate(45deg);
-}
-@media screen and (min-width: 769px) {
-  .c-modal__close-btn:after {
-    width: 80%;
-    height: 6px;
-    left: 15%;
-  }
 }
 
 /* フォームボックス */
@@ -398,6 +293,7 @@ PC/SP切り替え
   letter-spacing: 1px;
   margin-bottom: 40px;
 }
+
 #signup-form input, #login-form input {
   width: 320px;
   margin-bottom: 20px;
@@ -406,22 +302,16 @@ PC/SP切り替え
   border: 1px solid #d0d5d8;
   border-radius: 5px;
 }
+
 #submit-btn {
   display: inline-block;
-  padding: 1.8666666667vw 18.6666666667vw;
+  padding: vw(14) vw(140);
   background-color: #5dca88;
   border: none;
-  border-radius: 0.8vw;
+  border-radius: vw(6);
   color: white;
-  margin: 2.6666666667vw auto;
+  margin: vw(20) auto;
   cursor: pointer;
-}
-@media screen and (min-width: 769px) {
-  #submit-btn {
-    padding: 14px 140px;
-    margin: 10px auto;
-    border-radius: 3px;
-  }
 }
 
 /* --------------------------------------------------
@@ -430,113 +320,54 @@ PC/SP切り替え
 .c-modal-scroll {
   padding: 0;
   margin: 0 auto;
-  width: 90.6666666667vw;
+  width: vw(680);
   overflow: hidden;
   overflow-x: scroll;
   position: relative;
   /* モーダル部分のCSS */
 }
-@media screen and (min-width: 769px) {
-  .c-modal-scroll {
-    width: 750px;
-  }
-}
 .c-modal-scroll__wrapper {
-  padding: 0vw;
-  width: 185.3333333333vw;
+  padding: vw(0);
+  width: vw(1390);
   font-size: 0.8rem;
   line-height: 1.5;
   font-weight: normal;
-  border: 0.2666666667vw solid rgba(13, 48, 15, 0.12);
+  border: vw(2) solid rgba(13, 48, 15, 0.12);
   border-collapse: collapse;
 }
-@media screen and (min-width: 769px) {
-  .c-modal-scroll__wrapper {
-    padding: 0px;
-    border: 1px solid rgba(13, 48, 15, 0.12);
-    width: 1000px;
-  }
-}
 .c-modal-scroll__wrapper tr th {
-  padding: 2.1333333333vw;
+  padding: vw(16);
   background-color: #666;
   color: #fff;
   text-align: center;
   font-weight: normal;
-  border: 0.2666666667vw solid rgba(13, 48, 15, 0.12);
-}
-@media screen and (min-width: 769px) {
-  .c-modal-scroll__wrapper tr th {
-    padding: 16px;
-    border: 1px solid rgba(13, 48, 15, 0.12);
-  }
+  border: vw(2) solid rgba(13, 48, 15, 0.12);
 }
 .c-modal-scroll__wrapper tr th:nth-of-type(1) {
-  width: 24vw;
-}
-@media screen and (min-width: 769px) {
-  .c-modal-scroll__wrapper tr th:nth-of-type(1) {
-    width: 120px;
-  }
+  width: vw(180);
 }
 .c-modal-scroll__wrapper tr th:nth-of-type(2) {
-  width: 42.6666666667vw;
-}
-@media screen and (min-width: 769px) {
-  .c-modal-scroll__wrapper tr th:nth-of-type(2) {
-    width: 240px;
-  }
+  width: vw(320);
 }
 .c-modal-scroll__wrapper tr th:nth-of-type(3) {
-  width: 32vw;
-}
-@media screen and (min-width: 769px) {
-  .c-modal-scroll__wrapper tr th:nth-of-type(3) {
-    width: 160px;
-  }
+  width: vw(240);
 }
 .c-modal-scroll__wrapper tr th:nth-of-type(4) {
-  width: 24vw;
-}
-@media screen and (min-width: 769px) {
-  .c-modal-scroll__wrapper tr th:nth-of-type(4) {
-    width: 120px;
-  }
+  width: vw(180);
 }
 .c-modal-scroll__wrapper tr th:nth-of-type(5) {
-  width: 24vw;
-}
-@media screen and (min-width: 769px) {
-  .c-modal-scroll__wrapper tr th:nth-of-type(5) {
-    width: 120px;
-  }
+  width: vw(180);
 }
 .c-modal-scroll__wrapper tr th:nth-of-type(6) {
-  width: 24vw;
-}
-@media screen and (min-width: 769px) {
-  .c-modal-scroll__wrapper tr th:nth-of-type(6) {
-    width: 120px;
-  }
+  width: vw(180);
 }
 .c-modal-scroll__wrapper tr th:nth-of-type(7) {
-  width: 34.6666666667vw;
-}
-@media screen and (min-width: 769px) {
-  .c-modal-scroll__wrapper tr th:nth-of-type(7) {
-    width: 120px;
-  }
+  width: vw(260);
 }
 .c-modal-scroll__wrapper tr td {
-  padding: 2.1333333333vw;
-  border: 0.2666666667vw solid rgba(13, 48, 15, 0.12);
+  padding: vw(16);
+  border: vw(2) solid rgba(13, 48, 15, 0.12);
   text-align: center;
-}
-@media screen and (min-width: 769px) {
-  .c-modal-scroll__wrapper tr td {
-    padding: 16px;
-    border: 1px solid rgba(13, 48, 15, 0.12);
-  }
 }
 .c-modal-scroll__container {
   position: absolute;
@@ -558,14 +389,6 @@ PC/SP切り替え
   background-size: contain;
   z-index: 2;
   animation: 2s ease-in-out slide infinite;
-}
-@media screen and (min-width: 769px) {
-  .c-modal-scroll__container:after {
-    width: 98px;
-    height: 100px;
-    top: calc(25% - 49px);
-    left: calc(50% - 50px);
-  }
 }
 @keyframes slide {
   0% {
@@ -613,42 +436,25 @@ PC/SP切り替え
   top: 30%;
   left: calc(50% - 45.33335vw);
   background-color: #e6ecf0;
-  padding: 5.3333333333vw 0 10.6666666667vw;
-  border-radius: 2.6666666667vw;
-  width: 90.6666666667vw;
+  padding: vw(40) 0 vw(80);
+  border-radius: vw(20);
+  width: vw(680);
   height: auto;
   text-align: center;
 }
-@media screen and (min-width: 769px) {
-  .c-modal-scroll__innerbox {
-    padding: 20px 0 40px;
-    border-radius: 10px;
-    top: 30%;
-    left: calc(50% - 225px);
-    width: 450px;
-  }
-}
 .c-modal-scroll__close-btn {
   position: absolute;
-  width: 4vw;
-  height: 4vw;
-  top: 1.3333333333vw;
-  right: 2.6666666667vw;
+  width: vw(30);
+  height: vw(30);
+  top: vw(10);
+  right: vw(20);
   cursor: pointer;
-}
-@media screen and (min-width: 769px) {
-  .c-modal-scroll__close-btn {
-    width: 30px;
-    height: 30px;
-    top: 10px;
-    right: 20px;
-  }
 }
 .c-modal-scroll__close-btn:before {
   content: "";
   position: absolute;
   width: 40%;
-  height: 6.4vw;
+  height: vw(48);
   background: #999;
   left: 0%;
   top: 50%;
@@ -656,31 +462,17 @@ PC/SP切り替え
   transform-origin: 50% 50%;
   transform: rotate(-45deg);
 }
-@media screen and (min-width: 769px) {
-  .c-modal-scroll__close-btn:before {
-    width: 80%;
-    height: 6px;
-    left: 15%;
-  }
-}
 .c-modal-scroll__close-btn:after {
   content: "";
   position: absolute;
   width: 40%;
-  height: 6.4vw;
+  height: vw(48);
   background: #999;
   left: 0%;
   top: 50%;
   top: calc(50% - 1px);
   transform-origin: 50% 50%;
   transform: rotate(45deg);
-}
-@media screen and (min-width: 769px) {
-  .c-modal-scroll__close-btn:after {
-    width: 80%;
-    height: 6px;
-    left: 15%;
-  }
 }
 
 /* --------------------------------------------------
@@ -691,12 +483,7 @@ PC/SP切り替え
   margin: 0;
 }
 .c-form-slider__inner {
-  padding: 4.2666666667vw;
-}
-@media screen and (min-width: 769px) {
-  .c-form-slider__inner {
-    padding: 16px;
-  }
+  padding: vw(32);
 }
 .c-form-slider__title {
   font-size: 2rem;
@@ -704,22 +491,12 @@ PC/SP切り替え
   font-weight: bold;
   text-align: center;
 }
-@media screen and (min-width: 769px) {
-  .c-form-slider__title {
-    font-size: 2.4rem;
-  }
-}
 .c-form-slider__index-btn-wrapper {
   display: flex;
   justify-content: flex-end;
 }
 .c-form-slider__index-btn-wrapper li {
-  margin-right: 2.1333333333vw;
-}
-@media screen and (min-width: 769px) {
-  .c-form-slider__index-btn-wrapper li {
-    margin-right: 8px;
-  }
+  margin-right: vw(16);
 }
 .c-form-slider__index-btn-wrapper li:last-of-type {
   margin-right: 0;
@@ -730,91 +507,51 @@ PC/SP切り替え
   animation: fadeIn 1s ease-out 0s 1 normal;
 }
 .c-form-slider__slide-inner {
-  margin: 4.2666666667vw 0;
+  margin: vw(32) 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-@media screen and (min-width: 769px) {
-  .c-form-slider__slide-inner {
-    margin: 32px 0;
-  }
-}
 .c-form-slider__slide-inner li {
-  margin-bottom: 2.1333333333vw;
-  padding: 2.1333333333vw;
+  margin-bottom: vw(16);
+  padding: vw(16);
   width: 49%;
   color: #0D300F;
   background-color: #F4F5F3;
-  border: 0.2666666667vw solid rgba(13, 48, 15, 0.12);
-}
-@media screen and (min-width: 769px) {
-  .c-form-slider__slide-inner li {
-    margin-bottom: 8px;
-    padding: 8px;
-    border: 1px solid rgba(13, 48, 15, 0.12);
-  }
+  border: vw(2) solid rgba(13, 48, 15, 0.12);
 }
 .c-form-slider__slide-inner li:last-of-type {
   margin-bottom: 0;
 }
 .c-form-slider__slide-caution {
-  padding: 1.0666666667vw;
+  padding: vw(8);
   color: #FFFFFF;
   background-color: #F21B3F;
-}
-@media screen and (min-width: 769px) {
-  .c-form-slider__slide-caution {
-    padding: 8px;
-    font-size: 14px;
-  }
 }
 .c-form-slider__slide-subtitle {
   padding: 0;
   margin: 0;
 }
 .c-form-slider__slide-attention {
-  padding: 1.0666666667vw;
+  padding: vw(8);
   color: #0D300F;
   background-color: rgba(13, 48, 15, 0.16);
 }
-@media screen and (min-width: 769px) {
-  .c-form-slider__slide-attention {
-    padding: 8px;
-    font-size: 14px;
-  }
-}
 .c-form-slider__fix {
-  padding: 13.3333333333vw 0;
+  padding: vw(100) 0;
   font-size: 2.4rem;
   line-height: 1.5;
   font-weight: bold;
   text-align: center;
 }
-@media screen and (min-width: 769px) {
-  .c-form-slider__fix {
-    font-size: 3.2rem;
-  }
-}
-@media screen and (min-width: 769px) {
-  .c-form-slider__fix {
-    padding: 50px 0;
-  }
-}
 
 .index-btn {
   color: rgba(13, 48, 15, 0.26);
   background-color: #F4F5F3;
-  padding: 0.5333333333vw 2.1333333333vw;
+  padding: vw(4) vw(16);
   font-size: 1rem;
   line-height: 1.5;
   font-weight: normal;
-}
-@media screen and (min-width: 769px) {
-  .index-btn {
-    padding: 3px 6px;
-    font-size: 14px;
-  }
 }
 
 .slides {
@@ -861,9 +598,9 @@ PC/SP切り替え
 .prev-btn button, .next-btn button {
   cursor: pointer;
   padding: 0;
-  margin: 0 0 1.0666666667vw;
-  width: 37.3333333333vw;
-  height: 13.3333333333vw;
+  margin: 0 0 vw(8);
+  width: vw(280);
+  height: vw(100);
   font-size: 1.6rem;
   line-height: 1.3;
   font-weight: bold;
@@ -871,22 +608,12 @@ PC/SP切り替え
   color: #0D300F;
   text-decoration: none;
   background-color: #F4F5F3;
-  border-radius: 1.0666666667vw;
-  box-shadow: 0 1.0666666667vw 0 rgba(13, 48, 15, 0.26);
-  border: 0.2666666667vw solid rgba(255, 255, 255, 0.12);
+  border-radius: vw(8);
+  box-shadow: 0 vw(8) 0 rgba(13, 48, 15, 0.26);
+  border: vw(2) solid rgba(255, 255, 255, 0.12);
   display: flex;
   align-items: center;
   justify-content: center;
-}
-@media screen and (min-width: 769px) {
-  .prev-btn button, .next-btn button {
-    margin: 0 0 4px;
-    width: 280px;
-    height: 50px;
-    border-radius: 4px;
-    box-shadow: 0 4px 0 rgba(13, 48, 15, 0.26);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-  }
 }
 .prev-btn button:hover, .next-btn button:hover, .prev-btn button:focus, .next-btn button:focus, .prev-btn button:visited, .next-btn button:visited, .prev-btn button:active, .next-btn button:active {
   color: #0D300F;

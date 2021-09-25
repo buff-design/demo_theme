@@ -3,32 +3,24 @@
 -------------------------------------------------- */
 .header {
   width: 92%;
-  margin: vw(40) auto vw(100);
-
-  @include mq_up(md) {
-    margin: 20px auto 50px;
-  }
+  margin: 20px auto 50px;
 
   &__inner {
-    
-    @include mq_up(md) {
-    }
   }
 
   &__logo {
-    width: vw(300);
+    width: 150px;
     margin: 0 auto;
 
-    @include mq_up(md) {
-      width: 150px;
-    }
+    a {
+      display: block;
 
-    img {
-      width: auto;
-      max-width: 100%;
-      height: auto;
-      vertical-align: top;
+      img {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        vertical-align: top;
+      }
     }
-
   }
 }
