@@ -7,12 +7,6 @@
     padding: vw(32) 0;
     text-align: center;
     @include fs-Caption-S;
-
-    @include mq_up(md) {
-      padding: 16px 0;
-      font-size: 10px;
-      
-    }
   }
   
 }

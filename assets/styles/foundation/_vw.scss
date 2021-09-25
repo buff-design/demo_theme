@@ -1,3 +1,0 @@
-@function vw($pixel) {
-  @return (($pixel/750) * 100) + vw;
-}

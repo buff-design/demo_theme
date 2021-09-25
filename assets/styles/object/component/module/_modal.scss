@@ -4,17 +4,10 @@
 .c-modal {
   padding: 0;
   margin: 0;
-  
-  @include mq_up(md) {
-    
-  }
 
   &__inner {
     padding: vw(0) 0 vw(96);
 
-    @include mq_up(md) {
-      padding: 0px 0 48px;
-    }
   }
 
   &__head {
@@ -23,10 +16,6 @@
     background-color: rgba(34,49,52,0.9);
     display: flex;
     justify-content: space-between;
-
-    @include mq_up(md) {
-      height: 40px;
-    }
 
   }
 
@@ -44,11 +33,6 @@
       background-color: rgba(255,255,255,0.5);
     }
 
-    @include mq_up(md) {
-      padding: 0 24px;
-      height: 40px;
-    }
-
   }
 
   &__hero {
@@ -58,18 +42,10 @@
       height: auto;
     }
 
-    @include mq_up(md) {
-      
-    }
-
   }
 
   &__content {
     text-align: center;
-
-    @include mq_up(md) {
-      
-    }
     
   }
 
@@ -84,11 +60,6 @@
 
     &:hover {
       opacity: 1;
-    }
-
-    @include mq_up(md) {
-      padding: 8px 24px;
-      border-radius: 4px;
     }
     
   }
@@ -129,13 +100,6 @@
     height: auto;
     text-align: center;
   
-    @include mq_up(md) {
-      padding: 20px 0 40px;
-      border-radius: 10px;
-      top: 30%;
-      left: calc(100% / 2 - 225px);
-      width: 450px;
-    }
   }
 
   &__close-btn {
@@ -145,14 +109,6 @@
     top: vw(10);
     right: vw(20);
     cursor: pointer;
-  
-    @include mq_up(md) {
-      width: 30px;
-      height: 30px;
-      top: 10px;
-      right: 20px;
-      
-    }
   
     &:before {
       content: "";
@@ -166,11 +122,6 @@
       transform-origin: 50% 50%;
       transform: rotate(-45deg);
   
-      @include mq_up(md) {
-        width: 80%;
-        height: 6px;
-        left: 15%;
-      }
     }
   
     &:after {
@@ -185,11 +136,6 @@
       transform-origin: 50% 50%;
       transform: rotate(45deg);
   
-      @include mq_up(md) {
-        width: 80%;
-        height: 6px;
-        left: 15%;
-      }
     }
   
   }
@@ -206,9 +152,6 @@
   letter-spacing: 1px;
   margin-bottom: 40px;
 
-  @include mq_up(md) {
-    
-  }
 }
 
 #signup-form input, #login-form input {
@@ -218,10 +161,6 @@
   padding: 12px 12px;
   border: 1px solid #d0d5d8;
   border-radius: 5px;
-
-  @include mq_up(md) {
-    
-  }
 }
 
 #submit-btn {
@@ -234,9 +173,4 @@
   margin: vw(20) auto;
   cursor: pointer;
 
-  @include mq_up(md) {
-    padding: 14px 140px;
-    margin: 10px auto;
-    border-radius: 3px;
-  }
 }
