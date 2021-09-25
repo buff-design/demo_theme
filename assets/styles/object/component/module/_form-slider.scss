@@ -8,11 +8,6 @@
   &__inner {
     padding: vw(32);
 
-    @include mq_up(md) {
-      padding: 16px;
-
-    }
-
   }
 
   &__title {
@@ -26,11 +21,6 @@
 
     li {
       margin-right: vw(16);
-
-      @include mq_up(md) {
-        margin-right: 8px;
-
-      }
 
       &:last-of-type {
         margin-right: 0;
@@ -54,11 +44,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-    @include mq_up(md) {
-      margin: 32px 0;
-  
-    }
-
     li {
       margin-bottom: vw(16);
       padding: vw(16);
@@ -66,13 +51,6 @@
       color: $Dark-100;
       background-color: $Surface;
       border: vw(2) solid $Dark-012;
-
-      @include mq_up(md) {
-        margin-bottom: 8px;
-        padding: 8px;
-        border: 1px solid $Dark-012;
-    
-      }
 
       &:last-of-type {
         margin-bottom: 0;
@@ -88,12 +66,6 @@
     color: $Light-100;
     background-color: $Secondary;
 
-    @include mq_up(md) {
-      padding: 8px;
-      font-size: 14px;
-  
-    }
-
   }
 
   &__slide-subtitle {
@@ -107,23 +79,12 @@
     color: $Dark-100;
     background-color: $Dark-016;
 
-    @include mq_up(md) {
-      padding: 8px;
-      font-size: 14px;
-  
-    }
-
   }
 
   &__fix {
     padding: vw(100) 0;
     @include fs-h1;
     text-align: center;
-
-    @include mq_up(md) {
-      padding: 50px 0;
-  
-    }
 
   }
   
@@ -134,12 +95,6 @@
   background-color: $Surface;
   padding: vw(4) vw(16);
   @include fs-Caption-S;
-
-  @include mq_up(md) {
-    padding: 3px 6px;
-    font-size: 14px;
-
-  }
   
 }
 
@@ -225,14 +180,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  @include mq_up(md) {
-    margin: 0 0 4px;
-    width: 280px;
-    height: 50px;
-    border-radius: 4px;
-    box-shadow: 0 4px 0 $Dark-026;
-    border: 1px solid $Light-012;
-  }
+
   &:hover,
   &:focus,
   &:visited,

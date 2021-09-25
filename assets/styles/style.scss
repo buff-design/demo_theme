@@ -4,9 +4,6 @@
 // Foundation
 // ==================================================
 @import "./foundation/_reset"; //リセット
-@import "./foundation/_breakpoint"; //ブレイクポイント
-@import "./foundation/vw"; //px→vw変換
-@import "./foundation/_visibility"; //PC/SP切り替え
 @import "./foundation/_mixin"; //関数
 @import "./foundation/_typography"; //フォント指定
 @import "./foundation/_color"; //カラー指定

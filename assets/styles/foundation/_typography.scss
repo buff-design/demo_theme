@@ -9,36 +9,24 @@ $Helvetica: "Helvetica Neue", Helvetica, Arial, "ヒラギノ角ゴシック", "
   font-size: 2.4rem;
   line-height: 1.5;
   font-weight: bold;
-  @include mq_up(md) {
-    font-size: 3.2rem;
-  }
 }
 
 @mixin fs-h2 {
   font-size: 2rem;
   line-height: 1.5;
   font-weight: bold;
-  @include mq_up(md) {
-    font-size: 2.4rem;
-  }
 }
 
 @mixin fs-h3 {
   font-size: 1.8rem;
   line-height: 1.5;
   font-weight: bold;
-  @include mq_up(md) {
-    font-size: 2rem;
-  }
 }
 
 @mixin fs-h4 {
   font-size: 1.6rem;
   line-height: 1.5;
   font-weight: bold;
-  @include mq_up(md) {
-    font-size: 1.8rem;
-  }
 }
 
 @mixin fs-Subtitle-XL {
