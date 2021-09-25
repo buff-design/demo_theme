@@ -2,7 +2,7 @@
   $description = 'php・WordPress・jQueryサンプルを無料配信中';
   $keywords = 'WordPress,php,css,scss,jQuery,html,javascript';
   $sitename = 'buff design';
-  $url = 'https://buff-design.com/sample/index.php';
+  $url = 'https://demo.creative-check.net/index.php';
   $title = 'ホーム';
   $image = 'https://buff-design.com/wp/wp-content/themes/bd/assets/images/common/logo.svg';
   include("header.php"); 
