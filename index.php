@@ -8,8 +8,8 @@
   include("header.php"); 
 ?>
 
-  <section class="l-section">
-    <div class="p-article">
+  <section class="l-contents">
+    <div class="l-contents__list_article">
       <ul>
         <li><a href="tpl/modal.php">モーダルウィンドウ</a></li>
         <li><a href="tpl/modal-scroll.php">モーダルウィンドウ（横スクロール）</a></li>
