@@ -26,16 +26,16 @@
   <meta name="google-site-verification" content="" />
 
   <!-- CSS / JS -->
-  <link rel="stylesheet" href="https://buff-design.com/sample/style.css">
+  <link rel="stylesheet" href="https://creative-check.net/demo/style.css">
   <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <!-- <script src=""></script> -->
 </head>
 
 <body>
-  <header class="l-header">
-    <div class="l-header__inner">
-      <div class="l-header__logo">
-        <a href="../"><img src="https://buff-design.com/wp/wp-content/themes/bd/assets/images/common/logo.svg"></a>
+  <header class="header">
+    <div class="header__inner">
+      <div class="header__logo">
+        <a href=""><img src="https://buff-design.com/wp/wp-content/themes/bd/assets/images/common/logo.svg"></a>
       </div>
     </div>
   </header>
