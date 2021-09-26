@@ -8,6 +8,22 @@
   font-size: 100%;
 }
 
+html {
+  overflow-y: scroll;
+  font-size: 62.5%;
+  width: 100%;
+}
+body {
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center top;
+  letter-spacing: 0.02em;
+  width: 100%;
+  font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+  color: #000;
+  font-size: 1.8em;
+}
+
 h1,
 h2,
 h3,

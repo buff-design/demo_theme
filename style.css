@@ -9,6 +9,23 @@
   font-size: 100%;
 }
 
+html {
+  overflow-y: scroll;
+  font-size: 62.5%;
+  width: 100%;
+}
+
+body {
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center top;
+  letter-spacing: 0.02em;
+  width: 100%;
+  font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+  color: #000;
+  font-size: 1.8em;
+}
+
 h1,
 h2,
 h3,
@@ -123,13 +140,6 @@ fieldset {
 /* --------------------------------------------------
 セクション
 -------------------------------------------------- */
-.l-container {
-  width: 100%;
-}
-
-/* --------------------------------------------------
-セクション
--------------------------------------------------- */
 .l-section {
   padding: vw(48) 0 vw(80);
   margin: 0 auto;
@@ -142,6 +152,61 @@ fieldset {
 .l-main {
   margin: 0 auto;
   width: 100%;
+}
+.l-main__article {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 92%;
+  max-width: 1000px;
+  margin: 0 auto 80px;
+}
+.l-main__article:before {
+  display: block;
+  width: 22%;
+  content: "";
+  order: 1;
+}
+.l-main__article:after {
+  display: block;
+  width: 22%;
+  content: "";
+}
+@media screen and (max-width: 560px) {
+  .l-main__article {
+    display: block;
+  }
+}
+.l-main__article li {
+  width: 22%;
+  margin-bottom: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  transition: all 0.25s ease-in-out;
+}
+@media screen and (max-width: 560px) {
+  .l-main__article li {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 20px;
+  }
+}
+.l-main__article li a {
+  box-sizing: border-box;
+  display: block;
+  height: 100%;
+  padding-bottom: 5px;
+  color: #111;
+  text-decoration: none;
+}
+.l-main__article li a h2 {
+  margin: 0 10px 10px;
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+.l-main__thum {
+  margin-bottom: 10px;
 }
 
 /* --------------------------------------------------
@@ -171,7 +236,7 @@ fieldset {
 .l-footer__copyright {
   margin: 0;
   padding: 10px 0;
-  font-size: 0.8rem;
+  font-size: 1.3rem;
   text-align: center;
 }
 
@@ -184,18 +249,18 @@ fieldset {
   /* モーダル部分のCSS */
 }
 .c-modal__inner {
-  padding: vw(0) 0 vw(96);
+  padding: 0 0 48px;
 }
 .c-modal__head {
   width: 100%;
-  height: vw(80);
+  height: 40px;
   background-color: rgba(34, 49, 52, 0.9);
   display: flex;
   justify-content: space-between;
 }
 .c-modal__login {
-  height: vw(80);
-  padding: 0 vw(48);
+  height: 40px;
+  padding: 0 24px;
   color: white;
   background-color: rgba(255, 255, 255, 0.3);
   display: flex;
@@ -206,6 +271,16 @@ fieldset {
 .c-modal__login:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
+.c-modal__hero {
+  margin: 0 auto 0px;
+  width: 92%;
+  max-width: 720px;
+}
+@media screen and (max-width: 560px) {
+  .c-modal__hero {
+    width: 92%;
+  }
+}
 .c-modal__hero img {
   max-width: 100%;
   height: auto;
@@ -214,12 +289,12 @@ fieldset {
   text-align: center;
 }
 .c-modal__btn {
-  padding: vw(16) vw(48);
+  padding: 8px 24px;
   color: white;
   background-color: #239b76;
   display: inline-block;
   opacity: 0.8;
-  border-radius: vw(8);
+  border-radius: 4px;
   cursor: pointer;
 }
 .c-modal__btn:hover {
@@ -248,30 +323,35 @@ fieldset {
 .c-modal__innerbox {
   position: absolute;
   top: 30%;
-  left: calc(50% - 45.33335vw);
+  left: calc(50% - 225px);
   background-color: #e6ecf0;
-  padding: vw(40) 0 vw(80);
-  border-radius: vw(20);
-  width: vw(680);
+  padding: 20px 0 40px;
+  border-radius: 10px;
+  width: 450px;
   height: auto;
   text-align: center;
 }
+@media screen and (max-width: 560px) {
+  .c-modal__innerbox {
+    width: 340px;
+    left: calc(50% - 170px);
+  }
+}
 .c-modal__close-btn {
   position: absolute;
-  width: vw(30);
-  height: vw(30);
-  top: vw(10);
-  right: vw(20);
+  width: 15px;
+  height: 15px;
+  top: 5px;
+  right: 10px;
   cursor: pointer;
 }
 .c-modal__close-btn:before {
   content: "";
   position: absolute;
   width: 40%;
-  height: vw(48);
+  height: 24px;
   background: #999;
   left: 0%;
-  top: 50%;
   top: calc(50% - 1px);
   transform-origin: 50% 50%;
   transform: rotate(-45deg);
@@ -280,10 +360,9 @@ fieldset {
   content: "";
   position: absolute;
   width: 40%;
-  height: vw(48);
+  height: 24px;
   background: #999;
   left: 0%;
-  top: 50%;
   top: calc(50% - 1px);
   transform-origin: 50% 50%;
   transform: rotate(45deg);
@@ -311,12 +390,12 @@ fieldset {
 
 #submit-btn {
   display: inline-block;
-  padding: vw(14) vw(140);
+  padding: 7px 70px;
   background-color: #5dca88;
   border: none;
-  border-radius: vw(6);
+  border-radius: 3px;
   color: white;
-  margin: vw(20) auto;
+  margin: 10px auto;
   cursor: pointer;
 }
 
@@ -325,54 +404,64 @@ fieldset {
 -------------------------------------------------- */
 .c-modal-scroll {
   padding: 0;
-  margin: 0 auto;
-  width: vw(680);
+  margin: 0 auto 40px;
+  width: 720px;
   overflow: hidden;
   overflow-x: scroll;
   position: relative;
   /* モーダル部分のCSS */
 }
+@media screen and (max-width: 560px) {
+  .c-modal-scroll {
+    width: 360px;
+  }
+}
 .c-modal-scroll__wrapper {
-  padding: vw(0);
-  width: vw(1390);
-  font-size: 0.8rem;
+  padding: 0;
+  width: 1390px;
+  font-size: 1.4rem;
   line-height: 1.5;
   font-weight: normal;
-  border: vw(2) solid rgba(13, 48, 15, 0.12);
+  border: 1px solid rgba(13, 48, 15, 0.12);
   border-collapse: collapse;
 }
+@media screen and (max-width: 560px) {
+  .c-modal-scroll__wrapper {
+    width: 1000px;
+  }
+}
 .c-modal-scroll__wrapper tr th {
-  padding: vw(16);
+  padding: 8px;
   background-color: #666;
   color: #fff;
   text-align: center;
   font-weight: normal;
-  border: vw(2) solid rgba(13, 48, 15, 0.12);
+  border: 1px solid rgba(13, 48, 15, 0.12);
 }
 .c-modal-scroll__wrapper tr th:nth-of-type(1) {
-  width: vw(180);
+  width: 90px;
 }
 .c-modal-scroll__wrapper tr th:nth-of-type(2) {
-  width: vw(320);
+  width: 160px;
 }
 .c-modal-scroll__wrapper tr th:nth-of-type(3) {
-  width: vw(240);
+  width: 120px;
 }
 .c-modal-scroll__wrapper tr th:nth-of-type(4) {
-  width: vw(180);
+  width: 90px;
 }
 .c-modal-scroll__wrapper tr th:nth-of-type(5) {
-  width: vw(180);
+  width: 90px;
 }
 .c-modal-scroll__wrapper tr th:nth-of-type(6) {
-  width: vw(180);
+  width: 90px;
 }
 .c-modal-scroll__wrapper tr th:nth-of-type(7) {
-  width: vw(260);
+  width: 130px;
 }
 .c-modal-scroll__wrapper tr td {
-  padding: vw(16);
-  border: vw(2) solid rgba(13, 48, 15, 0.12);
+  padding: 8px;
+  border: 1px solid rgba(13, 48, 15, 0.12);
   text-align: center;
 }
 .c-modal-scroll__container {
@@ -387,10 +476,10 @@ fieldset {
 .c-modal-scroll__container:after {
   content: "";
   position: absolute;
-  top: calc(25% - 11.333335vw);
-  left: calc(50% - 11.066665vw);
-  width: 22.13333vw;
-  height: 22.66667vw;
+  top: calc(25% - 49px);
+  left: calc(50% - 50px);
+  width: 98px;
+  height: 100px;
   background: url(https://buff-design.com/sample/img/icon_scroll.png) center no-repeat;
   background-size: contain;
   z-index: 2;
@@ -442,25 +531,25 @@ fieldset {
   top: 30%;
   left: calc(50% - 45.33335vw);
   background-color: #e6ecf0;
-  padding: vw(40) 0 vw(80);
-  border-radius: vw(20);
-  width: vw(680);
+  padding: 20px 0 40px;
+  border-radius: 10px;
+  width: 340px;
   height: auto;
   text-align: center;
 }
 .c-modal-scroll__close-btn {
   position: absolute;
-  width: vw(30);
-  height: vw(30);
-  top: vw(10);
-  right: vw(20);
+  width: 15px;
+  height: 15px;
+  top: 5px;
+  right: 10px;
   cursor: pointer;
 }
 .c-modal-scroll__close-btn:before {
   content: "";
   position: absolute;
   width: 40%;
-  height: vw(48);
+  height: 24px;
   background: #999;
   left: 0%;
   top: 50%;
@@ -472,7 +561,7 @@ fieldset {
   content: "";
   position: absolute;
   width: 40%;
-  height: vw(48);
+  height: 24px;
   background: #999;
   left: 0%;
   top: 50%;
