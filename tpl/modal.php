@@ -9,7 +9,6 @@
 ?>
 
   <section>
-
       <div class="c-modal__signup-modal-wrapper" id="ji-signupModal">
         <div class="c-modal__innerbox">
           <div class="close-modal">
@@ -25,7 +24,6 @@
           </div>
         </div>
       </div>
-
       <div class="c-modal__login-modal-wrapper" id="ji-loginModal">
         <div class="c-modal__innerbox">
           <div class="close-modal">
@@ -41,7 +39,6 @@
           </div>
         </div>
       </div>
-      
       <div class="c-modal">
         <div class="c-modal__inner">
           <div class="c-modal__head">
@@ -59,7 +56,6 @@
           </div>
         </div>
       </div>
-    
   </section>
   <script src="../js/modal.js"></script>
 <?php include("../footer.php"); ?>

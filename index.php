@@ -8,14 +8,21 @@
   include("header.php"); 
 ?>
 
-  <section class="l-contents">
-    <div class="l-contents__list_article">
-      <ul>
-        <li><a href="tpl/modal.php">モーダルウィンドウ</a></li>
-        <li><a href="tpl/modal-scroll.php">モーダルウィンドウ（横スクロール）</a></li>
-        <li><a href="tpl/form-slide.php">フォームスライダー</a></li>
-      </ul>
-    </div>
+  <section class="l-main">
+    <ul class="l-main__article">
+      <li>
+        <a href="tpl/modal.php">
+          <div class="l-main__thum"><img src="https://buff-design.com/sample/img/website_login.svg" alt=""></div>
+          <h2>モーダルウィンドウ</h2>
+        </a>
+      </li>
+      <li>
+        <a href="tpl/modal-scroll.php">
+          <div class="l-main__thum"><img src="https://buff-design.com/wp/wp-content/uploads/2020/04/thum.png" alt=""></div>
+          <h2>モーダルウィンドウ（横スクロール）</h2>
+        </a>
+      </li>
+    </ul>
   </section>
 
 <?php include("footer.php"); ?>
