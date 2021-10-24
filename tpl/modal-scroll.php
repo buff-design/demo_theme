@@ -4,7 +4,7 @@
   $sitename = 'buff design';
   $url = 'https://buff-design.com/sample/modal-scroll.php';
   $title = 'モーダルウィンドウ（横スクロール）';
-  $image = 'https://buff-design.com/sample/img/website_login.svg';
+  $image = 'https://buff-design.com/wp/wp-content/uploads/2021/10/jquery_modal_thumb.jpg';
   include("../header.php"); 
 ?>
 
