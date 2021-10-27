@@ -49,7 +49,7 @@
             </div>
           </div>
           <div class="c-modal__hero">
-            <img src="https://buff-design.com/sample/img/website_login.svg" alt="">
+            <img src="https://buff-design.com/demo/img/website_login.svg" alt="">
             <div class="c-modal__content">
               <div id="ji-signUpShow" class="c-modal__btn">新規登録はこちら</div>
             </div>
