@@ -574,3 +574,112 @@ fieldset {
   transform-origin: 50% 50%;
   transform: rotate(45deg);
 }
+
+/* --------------------------------------------------
+アコーディオン
+-------------------------------------------------- */
+.c-accordion {
+  padding: 0;
+  margin: 0 auto 40px;
+  width: 720px;
+  overflow: hidden;
+  overflow-x: scroll;
+  position: relative;
+}
+@media screen and (max-width: 560px) {
+  .c-accordion {
+    width: 360px;
+  }
+}
+.c-accordion__head {
+  width: 100%;
+  height: 40px;
+  background-color: rgba(34, 49, 52, 0.9);
+  display: flex;
+  justify-content: space-around;
+}
+@media screen and (max-width: 560px) {
+  .c-accordion__head {
+    justify-content: space-between;
+  }
+}
+.c-accordion__hero {
+  padding: 40px 0;
+  margin: 0 auto 0px;
+  width: 92%;
+  max-width: 720px;
+}
+@media screen and (max-width: 560px) {
+  .c-accordion__hero {
+    width: 92%;
+  }
+}
+.c-accordion__hero img {
+  max-width: 100%;
+  height: auto;
+}
+.c-accordion__wrapper {
+  background-color: #e6ecf0;
+  text-align: center;
+  padding-bottom: 80px;
+  color: #5f5d60;
+}
+@media screen and (max-width: 560px) {
+  .c-accordion__wrapper {
+    padding-bottom: 40px;
+  }
+}
+.c-accordion__container {
+  width: 720px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 560px) {
+  .c-accordion__container {
+    padding: 0 0px;
+    width: 92%;
+  }
+}
+.c-accordion__title {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: #5f5d60;
+  font-weight: normal;
+}
+@media screen and (max-width: 560px) {
+  .c-accordion__title {
+    padding-top: 30px;
+  }
+}
+.c-accordion__faq-list {
+  width: 500px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+.c-accordion__faq-list-item {
+  margin: 12px;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  cursor: pointer;
+  text-align: left;
+}
+.c-accordion__faq-list-item h3 {
+  margin: 12px 24px 12px 0px;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+.c-accordion__faq-list-item span {
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  color: #3a3a3a;
+  font-size: 14px;
+}
+.c-accordion__answer {
+  font-size: 12px;
+  display: none;
+  padding: 8px 0px;
+  margin-bottom: 16px;
+}
