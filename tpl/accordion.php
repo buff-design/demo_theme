@@ -2,8 +2,8 @@
   $description = 'jQueryサンプルを無料配信中';
   $keywords = 'WordPress,php,css,sacc,scss,jQuery,html,javascript';
   $sitename = 'buff design';
-  $url = 'https://buff-design.com/sample/accordion.php';
-  $title = 'アコーディオン';
+  $url = 'https://demo.buff-design.com/tpl/accordion.php';
+  $title = 'アコーディオンA';
   $image = 'https://buff-design.com/demo/img/accordion_faq.svg';
   include("../header.php"); 
 ?>
