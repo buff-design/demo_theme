@@ -20,6 +20,13 @@ $(function() {
       $(this).find('span').text('-');
     }
   });
+
+  // Q&Aのアコーディオン
+  $('.jc-accTrigger').on('click', function () {
+    $(this).toggleClass('js-active').next('.jc-accContent').slideToggle(400);
+    $(this).next('.jc-accContent').toggleClass('js-active');
+    $(this).children('.jc-accTrigger_icon').toggleClass('js-active');
+  });
 	
 });
   

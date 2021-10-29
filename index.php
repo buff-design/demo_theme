@@ -2,7 +2,7 @@
   $description = 'php・WordPress・jQueryサンプルを無料配信中';
   $keywords = 'WordPress,php,css,scss,jQuery,html,javascript';
   $sitename = 'buff design';
-  $url = 'https://demo.creative-check.net/index.php';
+  $url = 'https://demo.buff-design.com/index.php';
   $title = 'ホーム';
   $image = 'https://buff-design.com/wp/wp-content/themes/bd/assets/images/common/logo.svg';
   include("header.php"); 
@@ -25,7 +25,13 @@
       <li>
         <a href="tpl/accordion.php">
           <div class="l-main__thum"><img src="https://buff-design.com/demo/img/accordion_faq.svg" alt=""></div>
-          <h2>アコーディオン</h2>
+          <h2>アコーディオンA</h2>
+        </a>
+      </li>
+      <li>
+        <a href="tpl/accordion-b.php">
+          <div class="l-main__thum"><img src="https://buff-design.com/demo/img/accordion_qa.jpg" alt=""></div>
+          <h2>アコーディオンB</h2>
         </a>
       </li>
     </ul>
