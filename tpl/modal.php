@@ -9,8 +9,8 @@
 ?>
 
   <section>
-      <div class="c-modal__signup-modal-wrapper" id="ji-signupModal">
-        <div class="c-modal__innerbox">
+      <div class="c-modal__signup-modal-wrapper" id="ji-signupModal"></div>
+        <div class="c-modal__inner-signup-box">
           <div class="close-modal">
             <i class="c-modal__close-btn"></i>
           </div>
@@ -23,9 +23,9 @@
             </form>
           </div>
         </div>
-      </div>
-      <div class="c-modal__login-modal-wrapper" id="ji-loginModal">
-        <div class="c-modal__innerbox">
+      
+      <div class="c-modal__login-modal-wrapper" id="ji-loginModal"></div>
+        <div class="c-modal__inner-login-box">
           <div class="close-modal">
             <i class="c-modal__close-btn"></i>
           </div>
@@ -38,7 +38,7 @@
             </form>
           </div>
         </div>
-      </div>
+      
       <div class="c-modal">
         <div class="c-modal__inner">
           <div class="c-modal__head">
