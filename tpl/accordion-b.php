@@ -44,8 +44,7 @@
           </div>
           <div class="c-accordion_Content jc-accContent">
             <ul>
-              <li>hasClassメソッドは、引数に指定したクラスを、オブジェクトが持っているか判定するときに使用します。
-オブジェクトがそのクラスを持っていればtrue、持っていなければfalseを返します。</li>
+              <li>hasClassメソッドは、引数に指定したクラスを、オブジェクトが持っているか判定するときに使用します。オブジェクトがそのクラスを持っていればtrue、持っていなければfalseを返します。</li>
             </ul>
           </div>
         </div>
