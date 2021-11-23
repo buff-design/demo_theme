@@ -325,7 +325,7 @@ fieldset {
   z-index: 100;
   display: none;
 }
-.c-modal__innerbox {
+.c-modal__inner-signup-box {
   position: absolute;
   top: 30%;
   left: calc(50% - 225px);
@@ -335,9 +335,30 @@ fieldset {
   width: 450px;
   height: auto;
   text-align: center;
+  z-index: 200;
+  display: none;
 }
 @media screen and (max-width: 560px) {
-  .c-modal__innerbox {
+  .c-modal__inner-signup-box {
+    width: 340px;
+    left: calc(50% - 170px);
+  }
+}
+.c-modal__inner-login-box {
+  position: absolute;
+  top: 30%;
+  left: calc(50% - 225px);
+  background-color: #e6ecf0;
+  padding: 20px 0 40px;
+  border-radius: 10px;
+  width: 450px;
+  height: auto;
+  text-align: center;
+  z-index: 200;
+  display: none;
+}
+@media screen and (max-width: 560px) {
+  .c-modal__inner-login-box {
     width: 340px;
     left: calc(50% - 170px);
   }

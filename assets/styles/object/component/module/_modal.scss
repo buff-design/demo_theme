@@ -92,7 +92,7 @@
     display: none;
   }
 
-  &__innerbox {
+  &__inner-signup-box {
     position: absolute;
     top: 30%;
     left: calc(100% / 2 - 225px);
@@ -102,6 +102,27 @@
     width: 450px;
     height: auto;
     text-align: center;
+    z-index: 200;
+    display: none;
+
+    @media screen and (max-width: 560px) {
+      width: 340px;
+      left: calc(100% / 2 - 170px);
+    }
+  }
+
+  &__inner-login-box {
+    position: absolute;
+    top: 30%;
+    left: calc(100% / 2 - 225px);
+    background-color: #e6ecf0;
+    padding: 20px 0 40px;
+    border-radius: 10px;
+    width: 450px;
+    height: auto;
+    text-align: center;
+    z-index: 200;
+    display: none;
 
     @media screen and (max-width: 560px) {
       width: 340px;
