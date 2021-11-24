@@ -34,6 +34,18 @@
           <h2>アコーディオンB</h2>
         </a>
       </li>
+      <li>
+        <a href="tpl/tab.php">
+          <div class="l-main__thum"><img src="https://buff-design.com/demo/img/shutterstock_365414408.jpg" alt=""></div>
+          <h2>タブ切替</h2>
+        </a>
+      </li>
+      <!-- <li>
+        <a href="tpl/slider.php">
+          <div class="l-main__thum"><img src="https://buff-design.com/wp/wp-content/uploads/2020/04/thum.png" alt=""></div>
+          <h2>スライダー</h2>
+        </a>
+      </li> -->
     </ul>
   </section>
 
