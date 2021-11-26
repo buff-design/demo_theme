@@ -2,9 +2,9 @@
   $description = 'jQueryサンプルを無料配信中';
   $keywords = 'WordPress,php,css,sacc,scss,jQuery,html,javascript';
   $sitename = 'buff design';
-  $url = 'https://buff-design.com/sample/slider.php';
+  $url = 'https://demo.buff-design.com/tpl/tab.php';
   $title = 'タブ切替';
-  $image = 'https://buff-design.com/sample/img/website_login.svg';
+  $image = 'https://buff-design.com/demo/img/shutterstock_364944905.jpg';
   include("../header.php"); 
 ?>
 

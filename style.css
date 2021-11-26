@@ -995,6 +995,97 @@ fieldset {
   max-width: 100%;
   height: auto;
 }
+.c-tab__inner {
+  padding-top: 40px;
+}
+.c-tab__list {
+  padding: 16px 16px 16px 16px;
+}
+.c-tab__list-title {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+.c-tab__list-image {
+  margin: 8px 0;
+  width: auto;
+}
+.c-tab__list-text {
+  font-size: 1.4rem;
+  line-height: 1.7;
+  font-weight: normal;
+}
+
+/* --------------------------------------------------
+タブ切替追従ボタン用
+-------------------------------------------------- */
+.c-tab-navi {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 200;
+  display: none;
+}
+@media screen and (max-width: 560px) {
+  .c-tab-navi {
+    width: 100%;
+  }
+}
+.c-tab-navi__inner {
+  display: flex;
+  background-color: #F4F5F3;
+  margin: 0 auto 0;
+}
+@media screen and (max-width: 560px) {
+  .c-tab-navi__inner {
+    width: 100%;
+  }
+}
+.c-tab-navi__button {
+  cursor: pointer;
+  width: 50%;
+  height: 50px;
+  font-size: 1.4rem;
+  line-height: 1.3;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #F4F5F3;
+  box-shadow: 0 4px 0 rgba(13, 48, 15, 0.26);
+}
+.c-tab-navi__button:hover {
+  color: #59B03C;
+  background-color: rgba(89, 176, 60, 0.08);
+}
+.c-tab-navi__button a {
+  width: 100%;
+  height: 100%;
+  color: #59B03C;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.c-tab-navi__button a:hover, .c-tab-navi__button a:focus, .c-tab-navi__button a:visited, .c-tab-navi__button a:active {
+  text-decoration: none;
+}
+.c-tab-navi__button.js-active {
+  position: relative;
+  width: 50%;
+  height: 50px;
+  font-size: 1.4rem;
+  line-height: 1.3;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #59B03C;
+  box-shadow: 0 4px 0 #2A7222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.c-tab-navi__button.js-active a {
+  color: #FFFFFF;
+}
 
 /* --------------------------------------------------
 スライダー
