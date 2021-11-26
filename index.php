@@ -36,8 +36,14 @@
       </li>
       <li>
         <a href="tpl/tab.php">
-          <div class="l-main__thum"><img src="https://buff-design.com/demo/img/shutterstock_365414408.jpg" alt=""></div>
+          <div class="l-main__thum"><img src="https://buff-design.com/demo/img/shutterstock_364944905.jpg" alt=""></div>
           <h2>タブ切替</h2>
+        </a>
+      </li>
+      <li>
+        <a href="tpl/tab_follow.php">
+          <div class="l-main__thum"><img src="https://buff-design.com/demo/img/shutterstock_365414408.jpg" alt=""></div>
+          <h2>タブ切替追従ボタン</h2>
         </a>
       </li>
       <!-- <li>
