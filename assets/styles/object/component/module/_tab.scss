@@ -153,4 +153,25 @@
       height: auto;
     }
   }
+
+  &__inner {
+    padding-top: 40px;
+  }
+
+  &__list {
+    padding: 16px 16px 16px 16px;
+  }
+
+  &__list-title {
+    @include fs-Subtitle-L;
+  }
+
+  &__list-image {
+    margin: 8px 0;
+    width: auto;
+  }
+
+  &__list-text {
+    @include fs-Body-S;
+  }
 }
