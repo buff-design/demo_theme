@@ -3,7 +3,7 @@
   $keywords = 'WordPress,php,css,sacc,scss,jQuery,html,javascript';
   $sitename = 'buff design';
   $url = 'https://demo.buff-design.com/tpl/tab_follow.php';
-  $title = 'タブ切替';
+  $title = 'タブ切替ボタンの追従';
   $image = 'https://buff-design.com/demo/img/shutterstock_365414408.jpg';
   include("../header.php"); 
 ?>
