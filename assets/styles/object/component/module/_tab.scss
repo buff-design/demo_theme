@@ -3,10 +3,11 @@
 -------------------------------------------------- */
 .c-tab {
   padding: 0;
-  margin: 0 auto 40px;
+  margin: 0 auto 80px;
   width: 720px;
   
   @media screen and (max-width: 560px) {
+    margin: 0 auto 40px;
     width: 360px;
   }
   
@@ -159,19 +160,37 @@
   }
 
   &__list {
-    padding: 16px 16px 16px 16px;
+    padding: 0px 0px 80px;
+
+    @media screen and (max-width: 560px) {
+      padding: 0px 0px 40px;
+    }
   }
 
   &__list-title {
-    @include fs-Subtitle-L;
+    font-size: 24px;
+    font-weight: bold;
+
+    @media screen and (max-width: 560px) {
+      @include fs-Subtitle-L;
+    }
   }
 
   &__list-image {
-    margin: 8px 0;
+    margin: 16px 0;
     width: auto;
+
+    @media screen and (max-width: 560px) {
+      margin: 8px 0;
+    }
   }
 
   &__list-text {
-    @include fs-Body-S;
+    font-size: 16px;
+    line-height: 1.8;
+
+    @media screen and (max-width: 560px) {
+      @include fs-Body-S;
+    }
   }
 }

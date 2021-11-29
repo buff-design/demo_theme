@@ -46,6 +46,12 @@
           <h2>タブ切替追従ボタン</h2>
         </a>
       </li>
+      <li>
+        <a href="tpl/smooth-scroll.php">
+          <div class="l-main__thum"><img src="https://buff-design.com/demo/img/shutterstock_675503758.jpg" alt=""></div>
+          <h2>ハンバーガーメニュー<br>ページ内スクロールリンク</h2>
+        </a>
+      </li>
       <!-- <li>
         <a href="tpl/slider.php">
           <div class="l-main__thum"><img src="https://buff-design.com/wp/wp-content/uploads/2020/04/thum.png" alt=""></div>
