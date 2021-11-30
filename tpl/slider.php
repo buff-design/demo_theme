@@ -4,7 +4,7 @@
   $sitename = 'buff design';
   $url = 'https://buff-design.com/sample/slider.php';
   $title = 'スライダー';
-  $image = 'https://buff-design.com/sample/img/website_login.svg';
+  $image = 'https://buff-design.com/demo/img/shutterstock_1165873744.jpg';
   include("../header.php"); 
 ?>
 

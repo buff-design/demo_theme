@@ -4,7 +4,7 @@
   $sitename = 'buff design';
   $url = 'https://demo.buff-design.com/tpl/smooth-scroll.php';
   $title = 'ハンバーガーメニュー＆ページ内スクロールリンク';
-  $image = 'https://buff-design.com/sample/img/website_login.svg';
+  $image = 'https://buff-design.com/demo/img/shutterstock_1165873744.jpg';
   include("../header.php"); 
 ?>
 
