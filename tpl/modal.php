@@ -4,7 +4,7 @@
   $sitename = 'buff design';
   $url = 'https://buff-design.com/sample/modal.php';
   $title = 'モーダルウィンドウ';
-  $image = 'https://buff-design.com/sample/img/website_login.svg';
+  $image = 'https://buff-design.com/demo/img/website_login.svg';
   include("../header.php"); 
 ?>
 
