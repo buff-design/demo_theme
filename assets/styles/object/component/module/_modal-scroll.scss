@@ -4,13 +4,14 @@
 .c-modal-scroll {
   padding: 0;
   margin: 0 auto 40px;
-  width: 720px;
+  width: 92%;
+  max-width: 720px;
   overflow: hidden;
   overflow-x: scroll;
   position: relative;
   
   @media screen and (max-width: 560px) {
-    width: 360px;
+    width: 92%;
   }
   
   &__wrapper {
