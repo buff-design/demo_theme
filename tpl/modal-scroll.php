@@ -2,7 +2,7 @@
   $description = 'jQueryサンプルを無料配信中';
   $keywords = 'WordPress,php,css,sacc,scss,jQuery,html,javascript';
   $sitename = 'buff design';
-  $url = 'https://buff-design.com/sample/modal-scroll.php';
+  $url = 'https://demo.buff-design.com/tpl/modal-scroll.php';
   $title = 'モーダルウィンドウ（横スクロール）';
   $image = 'https://buff-design.com/wp/wp-content/uploads/2021/10/jquery_modal_thumb.jpg';
   include("../header.php"); 
