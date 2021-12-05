@@ -2,7 +2,7 @@
   $description = 'jQueryサンプルを無料配信中';
   $keywords = 'WordPress,php,css,sacc,scss,jQuery,html,javascript';
   $sitename = 'buff design';
-  $url = 'https://buff-design.com/sample/modal.php';
+  $url = 'https://demo.buff-design.com/tpl/modal.php';
   $title = 'モーダルウィンドウ';
   $image = 'https://buff-design.com/demo/img/website_login.svg';
   include("../header.php"); 

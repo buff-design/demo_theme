@@ -3,13 +3,7 @@
 -------------------------------------------------- */
 .c-tab {
   padding: 0;
-  margin: 0 auto 80px;
-  width: 720px;
-  
-  @media screen and (max-width: 560px) {
-    margin: 0 auto 40px;
-    width: 360px;
-  }
+  margin: 0;
   
   &__head {
     width: 100%;
