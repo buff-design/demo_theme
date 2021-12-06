@@ -52,12 +52,18 @@
           <h2>ハンバーガーメニュー<br>ページ内スクロールリンク</h2>
         </a>
       </li>
-      <!-- <li>
+      <li>
         <a href="tpl/slider.php">
-          <div class="l-main__thum"><img src="https://buff-design.com/wp/wp-content/uploads/2020/04/thum.png" alt=""></div>
-          <h2>スライダー</h2>
+          <div class="l-main__thum"><img src="https://buff-design.com/demo/img/shutterstock_1833221329.jpg" alt=""></div>
+          <h2>イメージスライダー</h2>
         </a>
-      </li> -->
+      </li>
+      <li>
+        <a href="tpl/form.php">
+          <div class="l-main__thum"><img src="https://buff-design.com/demo/img/js.jpg" alt=""></div>
+          <h2>フォーム操作</h2>
+        </a>
+      </li>
     </ul>
   </section>
 

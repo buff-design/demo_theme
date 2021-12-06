@@ -1369,3 +1369,154 @@ fieldset {
   color: #fff;
   background-color: #5cabd0;
 }
+
+/* --------------------------------------------------
+スライダー
+-------------------------------------------------- */
+.c-form {
+  padding: 0;
+  margin: 0;
+}
+.c-form__head {
+  width: 100%;
+  height: 40px;
+  background-color: rgba(34, 49, 52, 0.9);
+}
+.c-form__inner {
+  padding: 0px 0 80px;
+  margin: 0 auto 0px;
+  width: 92%;
+  max-width: 720px;
+}
+@media screen and (max-width: 560px) {
+  .c-form__inner {
+    width: 92%;
+  }
+}
+.c-form .section-title {
+  color: #555;
+  padding-top: 40px;
+  padding-bottom: 16px;
+  text-align: center;
+}
+.c-form .section-title h3 {
+  font-size: 32px;
+}
+.c-form .section-content {
+  width: 80%;
+  margin: 0 auto;
+}
+.c-form .call-to-action {
+  text-align: center;
+  font-size: 16px;
+}
+.c-form .option-wrapper {
+  padding: 24px 0 48px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+@media screen and (max-width: 560px) {
+  .c-form .option-wrapper {
+    display: block;
+  }
+}
+.c-form .option-group {
+  margin: 0;
+}
+@media screen and (max-width: 560px) {
+  .c-form .option-group {
+    margin-bottom: 32px;
+  }
+}
+.c-form .option-image {
+  margin-bottom: 16px;
+  width: 160px;
+  height: auto;
+}
+@media screen and (max-width: 560px) {
+  .c-form .option-image {
+    width: 320px;
+  }
+}
+.c-form .option-btn {
+  cursor: pointer;
+  padding: 12px 0;
+  text-align: center;
+  background-color: #5dca88;
+  box-shadow: 0px 4px #279C56;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 16px;
+}
+@media screen and (max-width: 560px) {
+  .c-form .option-btn {
+    margin: 0 auto;
+    width: 320px;
+  }
+}
+.c-form .option-btn:active {
+  position: relative;
+  top: 2px;
+  box-shadow: none;
+}
+.c-form .form .select-form, .c-form .form .text-form {
+  margin: 0;
+  padding: 0 10px;
+  border: none;
+  color: #202020;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 0;
+  box-shadow: none;
+  transition: all 0.3s;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.08);
+}
+.c-form .form-group {
+  margin-bottom: 16px;
+}
+.c-form .select-form {
+  margin: 10px 0;
+  width: 100%;
+}
+.c-form .text-form {
+  width: 100%;
+  height: 75px;
+}
+.c-form .btn-submit {
+  font-family: "Dosis", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  background: #5983ff;
+  border: 1px solid #5979ff;
+  color: white;
+  box-shadow: inset 0 1px 0 #5867ed;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  padding: 12px 26px;
+}
+.c-form .output-wrapper {
+  padding: 32px 0 0px;
+}
+.c-form .output-wrapper h4 {
+  margin: 8px 0;
+}
+.c-form .output-inner {
+  padding: 10px 20px;
+  border: 2px dotted;
+  color: #888;
+  border-radius: 3px;
+  width: 100%;
+}
+.c-form .output-item {
+  font-size: 18px;
+  margin: 8px 0px;
+}
+.c-form .error-message {
+  margin-bottom: 16px;
+  color: #F51414;
+  height: 20px;
+}
