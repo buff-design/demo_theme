@@ -5,7 +5,6 @@ $(function() {
     $('.change-btn').show();
     if (slideIndex == 0) {
       $('.prev-btn').hide();
-    // 「3」の部分を、lengthメソッドを用いて書き換えてください
     } else if (slideIndex == $('.slide').length - 1) {
       $('.next-btn').hide();
     }
