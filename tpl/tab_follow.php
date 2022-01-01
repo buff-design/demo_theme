@@ -24,7 +24,7 @@
     </nav>
     
     <section id="ji-tabContainer" class="c-tab__wrapper">
-      <!-- タブ切替ボタン1 -->
+      <!-- タブ表示コンテンツ1 -->
       <article id="ji-tab-1" class="c-tab__content jc_tabContent02 js-show">
         <ul class="c-tab__inner">
           <li class="c-tab__list">
@@ -64,7 +64,7 @@
           </li>
         </ul>
       </article>
-      <!-- タブ切替ボタン2 -->
+      <!-- タブ表示コンテンツ2 -->
       <article id="ji-tab-2" class="c-tab__content jc_tabContent02">
         <ul class="c-tab__inner">
           <li class="c-tab__list">

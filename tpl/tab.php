@@ -16,13 +16,13 @@
     </ul>
     
     <section id="ji-tabContainer" class="c-tab__wrapper">
-      <!-- タブ切替ボタン1 -->
+      <!-- タブ表示コンテンツ1 -->
       <article id="ji-tab-1" class="c-tab__content jc_tabContent02 js-show">
         <div class="c-tab__image">
           <img src="https://buff-design.com/demo/img/shutterstock_364944905.jpg">
         </div>
       </article>
-      <!-- タブ切替ボタン2 -->
+      <!-- タブ表示コンテンツ2 -->
       <article id="ji-tab-2" class="c-tab__content jc_tabContent02">
         <div class="c-tab__image">
           <img src="https://buff-design.com/demo/img/shutterstock_365414408.jpg">
