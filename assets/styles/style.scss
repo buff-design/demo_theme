@@ -28,10 +28,11 @@
 @import "./object/component/module/hamburger"; //ハンバーガーメニュー
 @import "./object/component/module/slider"; //スライダー
 @import "./object/component/module/form"; //フォーム
+@import "./object/component/module/vue-tab"; //タブ切替（vue.js）
 // ==================================================
 // object - component - parts
 // ==================================================
-
+@import "./object/component/parts/title"; //タイトル
 // ==================================================
 // object - project
 // ==================================================
@@ -39,3 +40,4 @@
 // ==================================================
 // object - utility
 // ==================================================
+@import "./object/utility/_utility"; //
