@@ -1,0 +1,45 @@
+/* --------------------------------------------------
+タブ切替
+-------------------------------------------------- */
+$green: #41b883;
+$white: #fff;
+
+#tab {
+  
+  width: 100%;
+  max-width: 500px;
+  margin: 40px auto;
+  
+  .tabMenu {
+    display: flex;
+    
+    li {
+      width: auto;
+      padding: 10px 20px;
+      color: $white;
+      border-right: 1px solid $white;
+      background-color: $green;
+      cursor: pointer;
+      
+      &.active {
+        font-weight: bolder;
+      }
+      
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+
+  .tabContents {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid $green;
+    
+    h2 {
+      margin: 0 0 10px 0;
+      font-size: 20px;
+      font-weight: bolder;
+    }
+  }
+}

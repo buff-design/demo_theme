@@ -146,6 +146,18 @@ fieldset {
   width: 100%;
 }
 
+.l-section-wrapper {
+  width: 92%;
+  max-width: 720px;
+  margin: 0 auto 0px;
+  padding: 0px 0 40px;
+}
+@media screen and (max-width: 560px) {
+  .l-section-wrapper {
+    width: 92%;
+  }
+}
+
 /* --------------------------------------------------
 セクション
 -------------------------------------------------- */
@@ -1519,4 +1531,68 @@ fieldset {
   margin-bottom: 16px;
   color: #F51414;
   height: 20px;
+}
+
+/* --------------------------------------------------
+タブ切替
+-------------------------------------------------- */
+#tab {
+  width: 100%;
+  max-width: 500px;
+  margin: 40px auto;
+}
+#tab .tabMenu {
+  display: flex;
+}
+#tab .tabMenu li {
+  width: auto;
+  padding: 10px 20px;
+  color: #fff;
+  border-right: 1px solid #fff;
+  background-color: #41b883;
+  cursor: pointer;
+}
+#tab .tabMenu li.active {
+  font-weight: bolder;
+}
+#tab .tabMenu li:last-child {
+  border-right: none;
+}
+#tab .tabContents {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #41b883;
+}
+#tab .tabContents h2 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+/* --------------------------------------------------
+タイトル装飾
+-------------------------------------------------- */
+.c-title {
+  font-size: 1.6rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  width: 92%;
+  max-width: 560px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+.c-title::before, .c-title::after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background: #cccccc;
+  display: block;
+}
+.c-title::before {
+  margin-right: 1em;
+}
+.c-title::after {
+  margin-left: 1em;
 }

@@ -1,0 +1,29 @@
+/* --------------------------------------------------
+タイトル装飾
+-------------------------------------------------- */
+$bp_s: 560px;
+.c-title {
+  font-size: $fontSize;
+  font-weight: normal;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  width: 92%;
+  max-width: $bp_s;
+  margin: 0 auto 60px;
+  text-align: center;
+  &::before,
+  &::after {
+    content: "";
+	flex-grow: 1;
+	height: 1px;
+	background: $borderColor;
+	display: block;
+  }
+  &::before {
+    margin-right: 1em;
+  }
+  &::after {
+    margin-left: 1em;
+  }
+}
