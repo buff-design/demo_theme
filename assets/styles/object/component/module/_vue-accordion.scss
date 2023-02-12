@@ -1,0 +1,66 @@
+/* --------------------------------------------------
+アコーディオン
+-------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Lato');
+.accordion {
+  max-width: 400px;
+  margin: 0 auto 20px;
+  border-radius: 6px;
+  background-color: #59B03C;
+  font-family: Lato;
+}
+
+.accordion .header {
+  position: relative;
+  width: auto;
+  height: 40px;
+  margin: 0 auto;
+  padding: 0 40px 0 8px;
+  line-height: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.accordion .header-icon {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  transform: rotate(0deg);
+  transition-duration: 0.3s;
+}
+
+.accordion .body {
+  overflow: hidden;
+  border: 10px solid #59B03C;
+  border-top: 0;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-color: #fff;
+  transition: 150ms ease-out;
+}
+
+.accordion .body-inner {
+  padding: 8px 8px 16px 8px;
+  overflow-wrap: break-word;
+}
+
+.accordion .header-icon.rotate {
+  transform: rotate(180deg);
+  transition-duration: 0.3s;
+}
+
+.accordion.secondary {
+  background-color: #F57E11;
+}
+
+.accordion.secondary .body {
+  border-color: #F57E11;
+}
+
+.accordion.tertiary {
+  background-color: #3C91E6;
+}
+
+.accordion.tertiary .body {
+  border-color: #3C91E6;
+}
