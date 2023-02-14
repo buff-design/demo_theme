@@ -20,5 +20,6 @@
       </accordion>
     </div>
   </section>
+  <script src="https://unpkg.com/vue@2.4.1"></script>
   <script src="../js/vue-accordion.js"></script>
 <?php include("../footer.php"); ?>
