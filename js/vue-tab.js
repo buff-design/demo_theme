@@ -13,6 +13,25 @@ createApp ({
   }
 }).mount('#tab')
 
+// const { createApp } = Vue
+
+// createApp ({
+//   data() {
+//     return {
+//       isActive: '1',
+//       isMounted: false
+//     }
+//   },
+//   methods: {
+//     isSelect: function (num = '1') {
+//       this.isActive = num;
+//     }
+//   },
+//   mounted() {
+//     this.isSelect()
+//   }
+// }).mount('#tab')
+
 // new Vue({
 //   el: '#tab',
 //   data: {
