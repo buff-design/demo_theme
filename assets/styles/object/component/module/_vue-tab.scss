@@ -5,13 +5,13 @@ $green: #41b883;
 $white: #fff;
 
 #tab {
-  
   width: 100%;
   max-width: 500px;
   margin: 40px auto;
   
   .tabMenu {
     display: flex;
+    margin-bottom: -1px;
     
     li {
       width: auto;
@@ -22,7 +22,23 @@ $white: #fff;
       cursor: pointer;
       
       &.active {
+        border-top: 1px solid $green;
+        border-left: 1px solid $green;
+        border-right: 1px solid $green;
+        border-bottom: 1px solid $white;
+        background-color: $white;
+        color: $green;
         font-weight: bolder;
+
+        &:nth-of-type(2) {
+          border-left: 1px solid $white;
+          border-right: 1px solid $white;
+        }
+
+        &:last-child {
+          border-left: 1px solid $white;
+          border-right: 1px solid $green;
+        }
       }
       
       &:last-child {
@@ -40,6 +56,49 @@ $white: #fff;
       margin: 0 0 10px 0;
       font-size: 20px;
       font-weight: bolder;
+    }
+
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__article {
+      width: calc(100% / 2 - 8px);
+      word-wrap: break-word;
+    }
+    
+    &__title {
+      margin-bottom: 8px;
+      padding: 16px;
+      border: 1px solid rgba(13,48,15,.12);
+    }
+
+    &__intro {
+      margin-bottom: 8px;
+      padding: 16px;
+      border: 1px solid rgba(13,48,15,.12);
+      background-color: #fff8e7;
+    }
+
+    &__text {
+      margin-bottom: 8px;
+      padding: 16px;
+      border: 1px solid rgba(13,48,15,.12);
+      background-color: #ebf6e8;
+    }
+
+    &__note {
+      margin-bottom: 8px;
+      padding: 16px;
+      border: 1px solid rgba(13,48,15,.12);
+      background-color: #e7ebf5;
+    }
+
+    &__button {
+      padding: 16px;
+      border: 1px solid rgba(13,48,15,.12);
+      background-color: #f4f5f3;
     }
   }
 }
