@@ -12,6 +12,12 @@
     <h2 class="c-title">Vue js</h2>
     <ul class="l-main__article">
       <li>
+        <a href="tpl/vue-tab-height.php">
+          <div class="l-main__thum"><img src="https://buff-design.com/demo/img/shutterstock_1765143629.png" alt=""></div>
+          <h2>タブ切替(要素の高さを揃える)</h2>
+        </a>
+      </li>
+      <li>
         <a href="tpl/vue-accordion.php">
           <div class="l-main__thum"><img src="https://buff-design.com/demo/img/shutterstock_1765143629.png" alt=""></div>
           <h2>アコーディオンパネル</h2>
